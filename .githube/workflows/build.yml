@@ -1,4 +1,4 @@
-name: Build REBAZ TV APK
+oname: Build REBAZ TV APK
 
 on:
   push:
@@ -606,5 +606,5 @@ jobs:
     - name: Upload Finished ExoPlayer APK
       uses: actions/upload-artifact@v4
       with:
-        name: KurdTV-ExoPlayer-APK
+        name: RebazTv-ExoPlayer-APK
         path: app/build/outputs/apk/debug/app-debug.apk
