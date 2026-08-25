@@ -270,8 +270,8 @@
         </div>
         <div class="banner-container">
             <div class="main-banner">
-                <h2>KURD TV VIP</h2>
-                <p>باشترین بەرنامە بۆ پەخشی ڕاستەوخۆ</p>
+                <h2>REBAZ TV</h2>
+                <p> اللّهُمَّ صَلِّ عَلَىٰ مُحَمَّد وَعَلَىٰ آلِ مُحَمَّد </p>
             </div>
         </div>
 
@@ -360,8 +360,8 @@
             <div class="settings-card">
                 <div class="settings-avatar"><i class="fa-solid fa-crown text-yellow-400"></i></div>
                 <h3 class="settings-name">دەربارەی من</h3>
-                <p class="settings-bio">بەخێربێی بۆ باشترین بەرنامەی پەخشی ڕاستەوخۆ. بۆ ئاگاداربوون لە نوێترین زانیارییەکان و پەیوەندیکردن، سەردانی تیکتۆکەکەم بکە.</p>
-                <a href="https://www.tiktok.com/@kurdtv.vip" class="mt-2 mx-auto inline-flex items-center gap-2 bg-[#ff0050] text-white px-6 py-2.5 rounded-full font-bold shadow-[0_4px_15px_rgba(255,0,80,0.4)] active:scale-95 transition-transform" style="text-decoration: none;">
+                <p class="settings-bio">بەخێربێی بۆ باشترین بەرنامەی پەخشی ڕاستەوخۆ. بۆ ئاگاداربوون لە نوێترین زانیارییەکان، سەردانی پەیجی فەرمی REBAZ TV بکە لە تلیگرام.</p>
+                <a href="https://t.me/rebaz_tv" class="mt-2 mx-auto inline-flex items-center gap-2 bg-[#ff0050] text-white px-6 py-2.5 rounded-full font-bold shadow-[0_4px_15px_rgba(255,0,80,0.4)] active:scale-95 transition-transform" style="text-decoration: none;">
                     <i class="fa-brands fa-tiktok text-lg"></i><span>kurdtv.vip</span>
                 </a>
                 <div class="mt-5 inline-block bg-[#222] text-gray-400 text-xs font-bold px-4 py-1.5 rounded-full border border-gray-700">
@@ -538,24 +538,24 @@
 
             if (codeValue === 'rebaz.tv') {
                 try {
-                    localStorage.setItem('kurdTvVIP_activated', 'true');
+                    localStorage.setItem('rebaztv_activated', 'true');
                 } catch (e) {
                     try {
-                        sessionStorage.setItem('kurdTvVIP_activated', 'true');
+                        sessionStorage.setItem('rebaztv_activated', 'true');
                     } catch (ex) {}
                 }
-                triggerNotification("بەرنامە ب سەرکەفتیانە چالاک بوو!");
+                triggerNotification("بەرنامەکە بە سەرکەوتوی چلاک بوو!");
                 setTimeout(() => {
                     modal.style.setProperty('display', 'none', 'important');
                 }, 1500);
             } else {
-                triggerNotification("کۆد خەلەتە!");
+                triggerNotification("کۆد هەڵەیە!");
             }
         }
 
         // 🟢 فرمانا داواکرنا کۆدی ژ لاپەرێ تێلیگرامێ
         function requestTelegramCode() {
-            window.location.href = "https://t.me/Kurdtvvip";
+            window.location.href = "https://t.me/rebaz_tv";
         }
 
         function createCard(item) {
